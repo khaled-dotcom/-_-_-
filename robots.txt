@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ldi.mohesr.gov.eg/sitemap.xml
