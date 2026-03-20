@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ldi.mohesr.gov.eg/sitemap.xml
+Sitemap: https://khaled-dotcom.github.io/-_-_-/sitemap.xml
