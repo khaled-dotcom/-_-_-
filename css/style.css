@@ -426,9 +426,14 @@ body.loaded .loader-wrapper { opacity: 0; visibility: hidden; }
     
     /* Feature cards: stack vertically */
     .hero-features-overlap {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        z-index: 20;
         flex-direction: column;
         display: flex;
-        bottom: -220px;
+        margin-top: 28px;
         padding: 0 16px;
         gap: 16px;
     }
@@ -494,7 +499,7 @@ body.loaded .loader-wrapper { opacity: 0; visibility: hidden; }
     .hero-main-title { font-size: 1.85rem; }
     .hero-desc { font-size: 1rem; }
     .hero-section { padding-bottom: 260px; }
-    .hero-features-overlap { bottom: -240px; }
+    .hero-features-overlap { margin-top: 20px; padding: 0 12px; }
     
     .main-heading { font-size: 1.6rem; }
     .section-heading { margin-bottom: 2rem; }
