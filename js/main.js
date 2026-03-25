@@ -3,6 +3,17 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     /* ==============================================
+       0. Mobile viewport height fix (100vh issues)
+    ============================================== */
+    const setViewportVh = () => {
+        const vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    };
+    setViewportVh();
+    window.addEventListener('resize', setViewportVh, { passive: true });
+    window.addEventListener('orientationchange', setViewportVh, { passive: true });
+
+    /* ==============================================
        1. Preloader (Loading Screen)
     ============================================== */
     window.addEventListener('load', () => {
